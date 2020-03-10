@@ -20,7 +20,7 @@
 
 }
 
-.msg-header-emoji
+/* .msg-header-emoji
 {
     border-radius: 50%;
     width: 40px;
@@ -28,7 +28,7 @@
     margin-top: 8px;
     float: left;
    
-}
+}  This was got rid of as the wireframes has no emoji/image in the header */
 
 /* .msg-header-emoji .fa
 {
@@ -55,7 +55,7 @@
 .back-button
 {
     width: 50px;
-    float: right;
+    float: left;
     margin-top: 12px;
     margin-right: 5px;
     
@@ -73,7 +73,7 @@
 {
     width: 120px;
     float: right;
-    margin-top: 12px;
+    margin-top: 0;
     margin-right: 10px;
 }
 
@@ -86,20 +86,21 @@
 
 .chat-page
 {
-    padding: 0 0 50px 0;
-
+    padding: 0 0 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .msg-inbox 
 {
     border: 1px solid #F0F0F0;
     overflow: hidden;
-    padding-bottom: 30px;
+    padding-bottom: 5px; /* moving the text box underneath closer to the bottom */
 }
 
 .chats 
 {
-    padding: 30px 15px 0 25px; 
+    padding: 30px 15px 0 25px;
+     
 }
 
 .msg-page
@@ -107,16 +108,24 @@
     height: 500px;
     overflow-y: auto;
 
+
 }
 
-.received-chats-img
+/* .robot-chats 
+{
+    overflow: hidden;
+    margin: 26px 20px;
+
+} */
+
+.robot-chats-img
 {
     display: inline-block;
     width: 20px; 
     float: left; 
 }
 
-.received-msg 
+.robot-msg 
 {
     display: inline-block;
     padding: 0 0 0 10px; 
@@ -124,19 +133,19 @@
     width: 92%;
 }
 
-.received-msg-inbox
+.robot-msg-inbox
 {
     width: 57%;
 }
 
-.received-msg-inbox p 
+.robot-msg-inbox p 
 {
-    background: #efefef; /* none repeat scroll 0 0; */
+    background: #007bff none repeat scroll 0 0;
+    color: #fff;
     border-radius: 10px;
-    color: #646464;
     font-size: 14px;
     margin: 0;
-    padding: 5px 10px 5px 12px;
+    padding: 5px 60px 5px 12px;
     width: 100%;
 }
 
@@ -166,7 +175,7 @@
     margin-left: 45%;
 }
 
-.user-chats-img .fa
+.user-chats-img .fas
 {
     display: inline-block;
     width: 20px;
@@ -179,7 +188,7 @@
     height: 6%;
     background-color: #D3D3D3;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+    padding: 0;
 }
 
 .input-group
